@@ -64,9 +64,13 @@ public class ConsoleExercises {
 
         //Calculate the perimeter and area of codeup's classroom
 
+        // assume the room is perfect rectangles.
+        //assume that the user will enter valid numeric data for length and width .
+
         //1. Prompt the user to enter values of length and width of the classroom at code up use nextLine()
 
         Scanner scanRoom = new Scanner(System.in);
+//        scanRoom.useDelimiter("\n");
         System.out.println("please enter the value of length and value of width in order of length then width");
 //
 //        THIS IS WHEN TOKEN IS "INTEGER"
@@ -76,13 +80,40 @@ public class ConsoleExercises {
 
 
 //        THIS IS WHEN TOKEN IS "STRING"
-        String width = scanRoom.nextLine();
-        String length = scanRoom.nextLine();
+        String width = scanRoom.nextLine();  //30
+        String length = scanRoom.nextLine(); //40
+       // double heightNum = scanRoom.nextDouble();  // bonus , add code to accept decimals.
+
+        System.out.println(width); //30
+        System.out.println(length); //40
 
         //int widthNumber = parseInt(int)width; x
         //int widthNumber =parseInt (width, int radix); x
-       int widthNum = Integer.parseInt(width);
+       int widthNum = Integer.parseInt(width);  // as an example : double a = Double.parseDouble("5")  --> returns 5.0
        int lengthNum = Integer.parseInt(length);
+        System.out.println(widthNum); //30
+        System.out.println(lengthNum); //40   I do not see any difference on console... but i know values are integer.
+
+        int area = widthNum * lengthNum ;
+        int perimeter = (widthNum *2) + (lengthNum * 2);
+//        double volume = widthNum * lengthNum * heightNum;
+        System.out.println("The are of the room is : " + area + " and the perimeter of the room is :  " + perimeter ) ;
+//        System.out.println ("The volumn of the room is : " + volume ) ;
+
+
+        ////////Bonuses/////////
+
+        //added code to accept decimal : line 85;
+        //added useDelimiter("\n") : line 73 ;
+        //added result of volume : line 99 , line 101
+
+
+        // rewrite code with nextInt  : line 76 -79
+
+
+
+
+
 
 
 
