@@ -1,4 +1,4 @@
-import java.util.Scanner;
+import java.util.Scanner;  // this means importing Scanner Class. form : import name of the package . Class
 
 public class ConsoleIO {
 
