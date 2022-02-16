@@ -137,10 +137,98 @@ public class SyntaxTypesVariables {
 
         //5. declaring an long variable named myNumber, but do not assign anything to it.
         //Next try to print out myNumber to console.  what happen??
-        long myNumber;
+        //long myNumber;
         //System.out.println(myNumber); not working because it is not initialized
 
-        //6.
+        //6. change code to assign value of 3.14 to myNumber
+        //long myNumber = 3.14; //gives red-line because 3.14's data type is double.
+        //System.out.println(myNumber);
+
+        //7. change code to assign the value 123L to my number
+        //long myNumber = 123L;
+        //System.out.println(myNumber); // result of 123
+
+        //8. change code to assign value 123 to myNumber❓
+//        long myNumber = 123;
+//        System.out.println(myNumber); // result of 123 same as long myNumber = 123L
+        //WHY ? -->google says "a whole number is assumed to be an int and decimal is assumed to be a double." ....??
+
+        //9. change code to declare myNumber as a float and assign value to it.
+        // float myNumber = 3.14; error says incompatible types.❓
+        //2WAYS TO FIX IT ?!
+        //double myNumber = 3.14;
+        //System.out.println(myNumber);
+
+        // second way -- casting ?!
+//        float myNumber = 3.14;
+//        myNumber = (double) myNumber;
+
+        //10.
+         int x = 5;
+        System.out.println(x++); //5 post Increment
+        System.out.println(x); //6
+
+        int y = 5;
+        System.out.println(++y);//6 pre increment
+        System.out.println(y);//6
+
+        //11. try create variable name class
+//        String class = "hello";
+//        System.out.println(class); // not a statement, class cant be identifier
+
+        //12.
+        String theNumberThree = "three";
+        Object o = theNumberThree; // Object o = "three"
+        System.out.println(o); // "three"
+        //int three = (int) o;  // meaning , integer valueable of identifier three = "three" into number?!
+        //System.out.println(three); // String cannot be cast to class
+        //int three = (int) "three"; // still no because "three" is string and you cant cast that to number
+
+        //13 . rewrite shorthand assignment operators.
+        int j = 4;
+        //j = k + 5;
+        j += 5;
+        System.out.println(j); //9
+
+        int a = 3;
+        int b = 4;
+        //a = b * a;
+        a *=b;
+        System.out.println(a); //12
+
+        int m = 10;
+        int n = 2;
+//        m = m / n;
+//        n = n - m;
+        m /= n ; // m = 5
+        n-=m;  // n= 2-5?!
+        System.out.println(m);
+        System.out.println(n);
+
+        //14. what happens if assign value of number larger than type can hold ?
+
+       // byte bigNumber = 280;
+        // System.out.println(bigNumber); // message:  incompatible types: possible lossy conversion from int to byte
+
+        //What happens if increment a numeric variable past the type's capacity?
+
+        byte l = 127;
+        l++;
+        System.out.println(l);  // instead of being int l =128 , it because -128 ... why ? ❓
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
