@@ -1,4 +1,4 @@
-import java.util.Formatter ;
+//import java.util.Formatter ;
 import java.util.Scanner;
 public class ConsoleExercises {
 
@@ -18,10 +18,11 @@ public class ConsoleExercises {
        //double almostPi = 3.14;
         System.out.println(pi);
         System.out.println(almostPi);
-        System.out.println("The value of Pi is approximately " + almostPi);
+        //System.out.println("The value of Pi is approximately " + almostPi);
 
         //formatting
-        System.out.format("The value of  Pi is approximately %f%n", almostPi);
+        System.out.format("The value of  Pi is approximately %.2f%n", almostPi);
+        System.out.printf("the value of P is approximately %.2f%n",almostPi);
 
 
 
@@ -45,8 +46,9 @@ public class ConsoleExercises {
 
                 System.out.println(tokenOne);
                 System.out.println(tokenTwo);
-;               System.out.println(tokenThree);
-//                System.out.println(tokenOne+ "%n" + tokenTwo + "%n" + tokenThree + "%n"); // this didn't work  result : hamburger%nnoodle%nkalbi%n
+               System.out.println(tokenThree);
+               System.out.printf("%s, %s, %s %n", tokenOne, tokenTwo, tokenThree);
+//                System.out.printf(tokenOne+ %n + tokenTwo + "%n" + tokenThree + "%n"); // this didn't work  result : hamburger%nnoodle%nkalbi%n
                 //System.out.println(tokenOne +tokenTwo + tokenThree); no. did not work neither.   result : hamburgernoodlekalbi
 
         // what happens if you enter less than 3 words ? : nothing happens, just waiting for user token
@@ -70,13 +72,14 @@ public class ConsoleExercises {
         //1. Prompt the user to enter values of length and width of the classroom at code up use nextLine()
 
         Scanner scanRoom = new Scanner(System.in);
-//        scanRoom.useDelimiter("\n");
+        //scanRoom.useDelimiter("\n");
         System.out.println("please enter the value of length and value of width in order of length then width");
 //
 //        THIS IS WHEN TOKEN IS "INTEGER"
 //        int width = scanRoom.nextInt();
 //        int length = scanRoom.nextInt();
 //        System.out.println(scanRoom.nextInt() * scanRoom.nextInt());
+// 3040 // / 70
 
 
 //        THIS IS WHEN TOKEN IS "STRING"
@@ -87,8 +90,13 @@ public class ConsoleExercises {
         System.out.println(width); //30
         System.out.println(length); //40
 
-        //int widthNumber = parseInt(int)width; x
-        //int widthNumber =parseInt (width, int radix); x
+        // int - primitive
+        // Integer - object --> methods
+        // {
+        //  parseInt: function(str){str -> num; returns num}
+        // }
+
+        //int widthNumber = parseInt(int)width; x int widthNumber =parseInt (width, int radix); x
        int widthNum = Integer.parseInt(width);  // as an example : double a = Double.parseDouble("5")  --> returns 5.0
        int lengthNum = Integer.parseInt(length);
         System.out.println(widthNum); //30
@@ -98,12 +106,12 @@ public class ConsoleExercises {
         int perimeter = (widthNum *2) + (lengthNum * 2);
 //        double volume = widthNum * lengthNum * heightNum;
         System.out.println("The are of the room is : " + area + " and the perimeter of the room is :  " + perimeter ) ;
-//        System.out.println ("The volumn of the room is : " + volume ) ;
+//        System.out.println ("The volume of the room is : " + volume ) ;
 
 
         ////////Bonuses/////////
 
-        //added code to accept decimal : line 85;
+        //added code to accept decimal : line 87;
         //added useDelimiter("\n") : line 73 ;
         //added result of volume : line 99 , line 101
 

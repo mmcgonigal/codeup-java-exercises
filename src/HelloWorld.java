@@ -54,13 +54,13 @@ public class HelloWorld {
         //long myNumber = 123L;
         //System.out.println(myNumber); // result of 123
 
-        //8. change code to assign value 123 to myNumber❓
+        //8. change code to assign value 123 to myNumber
         //long myNumber = 123;
         //System.out.println(myNumber); // result of 123 same as long myNumber = 123L
         //WHY ? -->google says "a whole number is assumed to be an int and decimal is assumed to be a double." ....??
 
         //9. change code to declare myNumber as a float and assign value to it.
-        //float myNumber = 3.14; //error says incompatible types.❓
+        //float myNumber = 3.14; //error says incompatible types.
         //2WAYS TO FIX IT ?!
         //double myNumber = 3.14;
         // System.out.println(myNumber);
