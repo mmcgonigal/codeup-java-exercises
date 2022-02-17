@@ -67,12 +67,12 @@ public class ControlStatementsAndLoops {
             System.out.println("nope. this is a  more difficult course than js.");
         }
 
-        String b = "Man";
+        String b = "candy";
         int L = 0;
-        if (b.equals("man")){
-            System.out.println("this is a man");
+        if (b.equals("candy")){
+            System.out.println("this is a candy");
         }else {
-            System.out.println("this is a woman");
+            System.out.println("this is a chocolate");
         }
         if(L==3) {
             System.out.println(" L is 3");
@@ -138,6 +138,16 @@ public class ControlStatementsAndLoops {
         }else{
             System.out.println("Fail");
         }
+
+        int N = 30;
+        for(int m = N; m>30; m-- ){
+            for(int h = m; h >0; h--){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+
+
 
 
 
