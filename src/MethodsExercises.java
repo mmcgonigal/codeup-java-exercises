@@ -1,3 +1,4 @@
+import java.util.Locale;
 import java.util.Scanner;
 
 public class MethodsExercises {
@@ -66,34 +67,48 @@ public class MethodsExercises {
 //    }
 
 
-    //    // create a method that validates that user input is in a certain range,
-//    public static int getInteger(int min, int max){
-//        Scanner scanner = new Scanner (System.in);
-//        System.out.println("please enter the integer between " + min + " and " + max);
-//        int userInput = scanner.nextInt();
-//        if((userInput> min) && (userInput<max)){
-//            System.out.println(userInput + " is a valid number.");
-//
-//        }else{
-//            System.out.println(userInput + " is not a valid number.\n Please try again.");
-//            getInteger(min,max);
-//        }
-//        return
-//    }
+        // create a method that validates that user input is in a certain range,
+    public static int getInteger(int min, int max) {
+
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("please enter the integer between " + min + " and " + max);
+        int userNumber = scanner.nextInt();
+        //System.out.println(userNumber);
+        //System.out.println(min);
+        //System.out.println(max);
+        if (userNumber > min && userNumber < max) {
+            System.out.println(userNumber + " is a valid number.");
+            return userNumber;
+
+        } else {
+
+            System.out.println(userNumber + " is not a valid number.\n Please try again.");
+
+            return getInteger(min, max);
+        }
+
+        //System.exit(0);
+    }
     //5! = 1 x 2 x 3 x 4 x 5
-    public static long factorial(long number) {
-        long sum = 1;
-        if ((number < 1) || (number < 10)) {
+
+
+
+    public static long factorial(int number) {
+        int sum = 1;
+        if ((number < 1) || (number > 10)) {
             Scanner validation = new Scanner(System.in);
             System.out.println("Please enter valid number");
-            long userInput = factorial(validation.nextLong());
-        } else if(number > 1 && number < 10){
+            int newNumber = validation.nextInt();
+            return factorial(newNumber);
+        } else{
             for (int i = 1; i <= number; i++) {
                 sum = sum * i;
             }
-
-        }return sum;
+            return sum;
+        }
     }
+
+
 
 
         public static void main (String[]args){
@@ -109,12 +124,22 @@ public class MethodsExercises {
 //        System.out.println(getInteger(5,25));
 //        System.out.println(getInteger(6,10));
 
-            //bonus 3.
+         //   bonus 3.
+            Scanner Factorial = new Scanner(System.in);
+            System.out.println("please enter a number between 1 to 10");
+            int userInput = Factorial.nextInt();
+            System.out.println(factorial(userInput));
+            System.out.println("would  you like to continue ? [y / n]");
+            String userReply = Factorial.nextLine();
+            if(userReply.toLowerCase(Locale.ROOT).contains("y")){
+                System.out.println("please enter valid number between 1 to 10 ");
+                int secondNumber = Factorial.nextInt();
+                factorial(secondNumber);
+            }else{
+                System.out.println("okay.bye");
+            }
 
-            Scanner factorialResponse = new Scanner(System.in);
-            System.out.println(" please input any integer between 1 to 10");
-            long num = factorialResponse.nextInt();
-            System.out.println(factorial(num));
+
 
 
         }
