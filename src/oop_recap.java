@@ -1,11 +1,16 @@
 import java.util.Scanner;
 
-public class oop_recap {  //sandwich  // class is like a factory for an object.
-    //bluePrint -- > these belows are PROPERTIES // what kind of properties does the class have ? ex ) sandwich : bread, meat , veggies, cheese, sauce
+public class oop_recap {  //sandwich  // class is like a frame for an object. /or factory to instance(create new object)
+    // 클래스를 이용하여, 현실세계의 특정한 물건을 지칭할 수 있음. 가장 많이 사용되는 대표적인 예가 Node Class, 이는 하나의 장소나 위치를 의미할 수 도 있음.
+
+    //bluePrint -- > these belows are PROPERTIES 속성 , 성격, 사물에 대한 성질을 묶어서 나타낸것, // what kind of properties does the class have ? ex ) sandwich : bread, meat , veggies, cheese, sauce
     public String firstName; //bread
     public String lastName; // meat
     public int age;
     public String relationship;
+
+
+
     public String sayHi (){
         return ("hello from " + firstName);
     }

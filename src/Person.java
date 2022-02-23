@@ -32,7 +32,7 @@ public class Person{
 
 //        Person person1 = new Person("John");
 //        Person person2 = person1;
-//        System.out.println(person1 == person2); //true , because new created object person2's value is person 1.
+//        System.out.println(person1 == person2); //true , because new created object person2's value is person 1. // garbage collector will clear
 
 
         Person person1 = new Person("John");
