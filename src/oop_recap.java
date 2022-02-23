@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
-public class oop_recap {  //sandwich
-    //bluePrint -- > these belows are PROPERTIES
+public class oop_recap {  //sandwich  // class is like a factory for an object.
+    //bluePrint -- > these belows are PROPERTIES // what kind of properties does the class have ? ex ) sandwich : bread, meat , veggies, cheese, sauce
     public String firstName; //bread
     public String lastName; // meat
     public int age;
