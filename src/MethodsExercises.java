@@ -50,22 +50,23 @@ public class MethodsExercises {
         return answer;
 
     }
+
+    //3*4 = 3+3+3+3
 //
-//    //3*4 = 3+3+3+3
 //    public static int multiplicationWithRecursion(int num1, int num2){
-//        int sum = 0;
+//             int sum = 0;
 //        if(num2 == 0){
-//            return num1;
+//            return 0;
 //        }else{
 //            if(num2 == 1){
-//                sum= num1;
-//            }else if( num2 = 2){
-//                sum= num1 + num1;
+//             return  num1;
+//            }else if( num2 == 2){
+//                return sum= num1 + num1;
 //            }
 //            }
 //        }
 //    }
-
+//
 
         // create a method that validates that user input is in a certain range,
     public static int getInteger(int min, int max) {
@@ -106,6 +107,16 @@ public class MethodsExercises {
             }
             return sum;
         }
+
+        /////DICE BONUS ////
+//           public static void rollingDice(){
+//            Scanner diceScanner = new Scanner(System.in);
+//            System.out.println("");
+//
+//        }
+//
+//
+
     }
 
 
