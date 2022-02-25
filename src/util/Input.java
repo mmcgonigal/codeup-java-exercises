@@ -22,6 +22,7 @@ public class Input {
      public int getInt(){
          return scanner.nextInt();
      }
+
      public double getDouble(double min, double max){
          System.out.println("enter floats");
          double number  = scanner.nextDouble();
@@ -33,7 +34,7 @@ public class Input {
         return number;
      }
 
-     public boolean yerNo(){
+     public boolean yesNo(){
          System.out.println("please enter [yes /no/y/n] ");
          String answer = scanner.nextLine();
          if(answer.equalsIgnoreCase("yes")|| answer.equalsIgnoreCase("y") ){
@@ -41,7 +42,7 @@ public class Input {
          }else if(answer.equalsIgnoreCase("no") || answer.equalsIgnoreCase("n")){
              return false;
          }else{
-             return yerNo();
+             return yesNo();
          }
      }
 
