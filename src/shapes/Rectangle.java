@@ -25,10 +25,10 @@ public class Rectangle {
     this.width = width;
     }
 
-    public int perimeter (int length,int width){
+    public int getPerimeter (int length,int width){
         return (2*length)+(2*width);
     }
-    public int area(int length, int width){
+    public int getArea(int length, int width){
         return length * width;
     }
 
