@@ -20,6 +20,7 @@ public class Rectangle {
 
 
     public Rectangle(int length, int width){
+    super();
     this.length = length;
     this.width = width;
     }
