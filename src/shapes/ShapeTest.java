@@ -9,7 +9,10 @@ public class ShapeTest {
         System.out.println(box1.getPerimeter(box1.getLength(), box1.getWidth()));
 
         Rectangle box2 = new Square(5);
-        //System.out.println(box2.getArea(box2.getSide()));
+        System.out.println(box2.getArea(box2.getLength(), box2.getWidth()));
+
+        //Square box3 = new Square(4);
+        //box3.getArea(4);
 
 
 
