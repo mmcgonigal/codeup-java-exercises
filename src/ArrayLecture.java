@@ -74,22 +74,43 @@ public class ArrayLecture {
         System.out.println(Arrays.toString(arr));
 
         //TODO Lets create a method (nums) that return the sum of all integer in an array
-        int sum =0 ;
+        int sum =0; ;
         int [] arrOfNum = {1,2,3,4,5};
         for (int i = 0 ; i < 5; i ++){
             sum +=arrOfNum[i];
         }
         System.out.println(sum);
+        //for (data type and name of variable :  name of the array we are iterating through ) :: for(String name : Names){sout(name)}
 
-        int total = 0;
-        int randomSum = 0;
+
+        int randomSum=0;
         int [] arrOfRandomNum = new int [10];
         for (int i = 0; i < 10 ; i++){
             arrOfRandomNum[i] = (int)(Math.random()*100 +1);
             System.out.println(arrOfRandomNum[i]);
-            total += arrOfRandomNum[i];
+
+           randomSum += arrOfRandomNum[i];
         }
-        System.out.println(total);
+        System.out.println(Arrays.toString(arrOfRandomNum));
+        System.out.println(randomSum);
+
+        //TODO SELF PRACTICE :: compare each array and bring put the biggest random integer between 1 - 99 index.
+
+        int result = -1;
+        int [] compareIndex = new int[20];
+        for(int i = 0 ; i < 20 ; i ++) {
+            compareIndex[i] = (int) (Math.random() * 100 + 1);
+            System.out.println(Arrays.toString(compareIndex));
+           result = max(result, compareIndex[i]);
+
+        }
+        System.out.println("the largest integer among random 1-99 number of 20 index is "+ result +" .");
+
+
+
+
+
+
 
 
 
