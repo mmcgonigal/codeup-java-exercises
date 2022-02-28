@@ -2,6 +2,10 @@ import java.util.Arrays;
 
 public class ArrayLecture {
 
+    public static int max(int a, int b){
+        return (a > b)? a : b;
+    }
+
     public static void main (String[] args){
         // HWAT ARE ARRAYS
         //--->Length of arrays MUST be defined before using in Java
@@ -68,6 +72,28 @@ public class ArrayLecture {
 
         int [] arr = {1233,12334,234234,112341};
         System.out.println(Arrays.toString(arr));
+
+        //TODO Lets create a method (nums) that return the sum of all integer in an array
+        int sum =0 ;
+        int [] arrOfNum = {1,2,3,4,5};
+        for (int i = 0 ; i < 5; i ++){
+            sum +=arrOfNum[i];
+        }
+        System.out.println(sum);
+
+        int total = 0;
+        int randomSum = 0;
+        int [] arrOfRandomNum = new int [10];
+        for (int i = 0; i < 10 ; i++){
+            arrOfRandomNum[i] = (int)(Math.random()*100 +1);
+            System.out.println(arrOfRandomNum[i]);
+            total += arrOfRandomNum[i];
+        }
+        System.out.println(total);
+
+
+
+
 
 
 
