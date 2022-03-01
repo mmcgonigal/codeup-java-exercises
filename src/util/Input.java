@@ -11,19 +11,22 @@ public class Input {
     }
 
 
-     public Input (){
+     public  Input (){
         this. scanner = new Scanner(System.in);
      }
 
-     public String getString() {
+     public static String getString() {
+        Scanner scanner = new Scanner(System.in);
         return scanner.nextLine();
      }
 
-     public int getInt(){
-         return scanner.nextInt();
+     public static int getInt(){
+         Scanner scanner = new Scanner(System.in);
+        return scanner.nextInt();
      }
 
-     public double getDouble(double min, double max){
+     public static double getDouble(double min, double max){
+         Scanner scanner = new Scanner(System.in);
          System.out.println("enter floats");
          double number  = scanner.nextDouble();
          if(number > min && number < max){
@@ -34,7 +37,8 @@ public class Input {
         return number;
      }
 
-     public boolean yesNo(){
+     public static boolean yesNo(){
+         Scanner scanner = new Scanner(System.in);
          System.out.println("please enter [yes /no/y/n] ");
          String answer = scanner.nextLine();
          if(answer.equalsIgnoreCase("yes")|| answer.equalsIgnoreCase("y") ){
