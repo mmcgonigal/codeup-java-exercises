@@ -6,7 +6,13 @@ public class ArrayLecture {
         return (a > b)? a : b;
     }
 
+
+
+
+
     public static void main (String[] args){
+
+
         // HWAT ARE ARRAYS
         //--->Length of arrays MUST be defined before using in Java
         //all array store the same data type of the elements being stored in the array
@@ -136,6 +142,30 @@ public class ArrayLecture {
         System.out.println(Arrays.toString(randomNumbers));
         Arrays.sort(randomNumbers); // automatic numeric order
         System.out.println(Arrays.toString(randomNumbers));
+
+        //TODO Write a program that creates an array, and then prints the sum of the even and odd integers in a new array [sumOdd, sumEven]
+        //example: [2,4,8,5,1,2];
+        //output; [6,16]
+        //reason: 2+4+8+2 = 16
+        //5+1 = 6 (edited)
+
+        int [] addOddEven = new int [8];
+        for( int i = 0 ; i < 8; i++){
+            addOddEven[i] = (int)(Math.random()*100 +1);
+        }
+        int evenSum = 0;
+        int oddSum = 0;
+        for(int i = 0; i <10; i ++ ){
+            if (addOddEven[i] %2 == 0){
+                evenSum += addOddEven[i];
+            }else{
+                oddSum += addOddEven[i];
+            }
+        }
+        int [] sums = {evenSum,oddSum};
+        System.out.println(Arrays.toString(sums));
+
+
 
 
 
