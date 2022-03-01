@@ -1,3 +1,4 @@
+import java.sql.SQLOutput;
 import java.util.Arrays;
 
 public class ArrayLecture {
@@ -86,6 +87,7 @@ public class ArrayLecture {
             sum +=arrOfNum[i];
         }
         System.out.println(sum);
+
         //for (data type and name of variable :  name of the array we are iterating through ) :: for(String name : Names){sout(name)}
 
 
@@ -148,22 +150,42 @@ public class ArrayLecture {
         //output; [6,16]
         //reason: 2+4+8+2 = 16
         //5+1 = 6 (edited)
+//
+//        int [] addOddEven = new int [8];
+//        for( int i = 0 ; i < 8; i++){
+//            addOddEven[i] = (int)(Math.random()*100 +1);
+//        }
+//        int evenSum = 0;
+//        int oddSum = 0;
+//        for(int i = 0; i <10; i ++ ){
+//            if (addOddEven[i] %2 == 0){
+//                evenSum += addOddEven[i];
+//            }else{
+//                oddSum += addOddEven[i];
+//            }
+//        }
+//        int [] sums = {evenSum,oddSum};
+//        System.out.println(Arrays.toString(sums));
+//
 
-        int [] addOddEven = new int [8];
-        for( int i = 0 ; i < 8; i++){
-            addOddEven[i] = (int)(Math.random()*100 +1);
-        }
-        int evenSum = 0;
-        int oddSum = 0;
-        for(int i = 0; i <10; i ++ ){
-            if (addOddEven[i] %2 == 0){
-                evenSum += addOddEven[i];
-            }else{
-                oddSum += addOddEven[i];
+        // TWO DIMENSIONAL ARRAYS
+        int [] myArr = new int[3];
+        int [][] myMatrix = {{4,7,9},{1,5,9},{2,2,7}};
+        System.out.println(Arrays.deepToString(myMatrix));
+        // print out every nested element in the matrix
+        //do a  loop
+        //do another loop
+
+        for(int[] rows: myMatrix){
+            System.out.println("-----------this is a new row----------");
+            for(int column: rows){
+                System.out.println(column);
             }
         }
-        int [] sums = {evenSum,oddSum};
-        System.out.println(Arrays.toString(sums));
+
+
+
+
 
 
 
