@@ -106,6 +106,38 @@ public class ArrayLecture {
         }
         System.out.println("the largest integer among random 1-99 number of 20 index is "+ result +" .");
 
+        //ARRAY CLASS
+
+        // ⭐️⭐️Arrays.fill()
+        String [] languages = {"french","portuguese","dutch"};
+        System.out.println(Arrays.toString(languages));
+        Arrays.fill(languages,"french");
+        System.out.println(languages);
+
+        //⭐️⭐️Arrays.equals()
+        String [] answer = {"apart","learn","knock"};
+        String[] KenGuess = {"texas", "green", "array"};
+        System.out.println(Arrays.equals(answer,KenGuess));
+
+        // accept two parameters ( from what array are you comparing, to what array are you comparing)
+        // returns a boolean
+
+        //⭐️⭐️Arrays.copyOf()
+        String [] lauraCopy = Arrays.copyOf(answer,2); // from index 0 to 2 of them.
+        System.out.println(Arrays.toString(lauraCopy));
+
+        //⭐️⭐️Arrays.sort()
+        String [] language = {"french", "portuguese", "dutch"};
+        System.out.println(Arrays.toString(language));
+        Arrays.sort(language);
+        System.out.println(Arrays.toString(language));  // automatic alphabetical order
+
+        int [] randomNumbers = {1,3,45,6,2,3,4,54,};
+        System.out.println(Arrays.toString(randomNumbers));
+        Arrays.sort(randomNumbers); // automatic numeric order
+        System.out.println(Arrays.toString(randomNumbers));
+
+
 
 
 
