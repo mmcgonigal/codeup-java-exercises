@@ -2,7 +2,7 @@ package grades;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-
+import java.util.Scanner;
 public class Student {
     private String name;
     private ArrayList<Integer> grades;
@@ -58,6 +58,8 @@ public class Student {
         System.out.println("student2.grades.size() = " + student2.grades.size());
         System.out.println("student2.getGradeAverage() = " + student2.getGradeAverage());
         System.out.println("student2.getName() = " + student2.getName());
+
+
 
 
     }
