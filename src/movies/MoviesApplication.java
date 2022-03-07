@@ -8,10 +8,7 @@ import util.Input;
 
 public class MoviesApplication {
 
-
-
-
-    public static void app () {
+    public void app () {
 
         Movie [] movieList = MoviesArray.findAll();
 
