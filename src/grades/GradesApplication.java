@@ -41,11 +41,49 @@ public class GradesApplication {
 
         Scanner scanner = new Scanner(System.in);
         System.out.println("Welcome\n Here are the Github usernames for our students. ");
+        String userName;
 
         for(String key : students.keySet()){  //while iterating keySets from students hashmap, get keys
             System.out.printf("| %s |",key);
         }
-        System.out.println("which student would you like to see more information on ? ");
+
+        //pseudo ::
+        //1.ask user  which student info he/she wants ?
+                //1-1 if id is in the list - print out info
+                //1-2 if user types id not on list , ask,if he wants to try again . 1-2.1 if yes, ask user info ,
+        //                                                                          1-2.2 if no,  goodbye
+        //2.ask if want to try another student.  2-1 if yes go back to 1
+        //
+        //
+        //                                       2-2 if no , good bye
+        String reply;
+        String answer;
+       do{ System.out.println("\nwhich student would you like to see more information on ? ");
+         userName = scanner.next();
+         if(students.containsKey(userName))
+           System.out.println("GitHub user name : " + userName +" - "+ " Name : "+ students.get(userName).getName() +" - "+ " Average Grade : " + students.get(userName).getGradeAverage());
+
+
+
+
+//             do {
+         if (!students.containsKey(userName)) {
+             System.out.printf("\nSorry, but no student found with github username of \"%s\" . ", userName);
+//                     System.out.println("Would you like to see another student? [y/n]");
+         }
+//                 reply = scanner.next();
+//                 if (reply.equalsIgnoreCase("n") || reply.equalsIgnoreCase("No")) ;
+//                 break;
+//             }while(reply.equalsIgnoreCase("y") || reply.equalsIgnoreCase("yes"));
+           System.out.println("Would you like to see another student ? [y/n]");
+           answer = scanner.next();
+
+       }while(answer.equalsIgnoreCase("y") || answer.equalsIgnoreCase("yes"));
+
+
+
+
+
 
 
 
