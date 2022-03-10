@@ -27,6 +27,13 @@ public class Input {
         String string = scanner.next();
         return string;
     }
+
+    public String getString(String prompt){
+        System.out.println(prompt);
+        return this.scanner.nextLine();
+    }
+
+
     public boolean yesNo(){
         System.out.println("Please answer yes or no");
         String answer = scanner.next();
@@ -36,6 +43,12 @@ public class Input {
             return false;
         }
     }
+
+    public boolean yesNo(String prompt){
+        System.out.println(prompt);
+        return yesNo();
+    }
+
     public int getInt(){
         System.out.println("please type in any integer");
         int num = this.scanner.nextInt();
