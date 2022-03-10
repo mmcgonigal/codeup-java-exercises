@@ -11,9 +11,10 @@ public class MoviesApplication {
     public void app () {
 
         Movie [] movieList = MoviesArray.findAll();
+        Input input =  new Input();
 
         System.out.println("What would you like to do ?\nPlease pick from below\n0 - exit\n1 - view all movies\n2 - view movies in the animated category\n3 - view movies in the drama category\n4 - view movies in horror category\n5 - view movies in the sci-fi category\n");
-        int userPick =  Input.getInt();
+        int userPick =  input.getInt();
         System.out.println(userPick);
 
 
@@ -54,9 +55,9 @@ public class MoviesApplication {
                 System.exit(0);
             }
         };
-//    public static void addMovie(String newMovieName, String newMovieCategory){
-//        Movie [] movieList = {Movie.setName(newMovieName),Movie.setCategory(newMovieCategory)}
-//    }
+    public static void addMovie(String newMovieName, String newMovieCategory){
+        Movie [] movieList = {Movie.setName(newMovieName),Movie.setCategory(newMovieCategory)};
+    }
 
     public static void main(String[] args) {}
 };
