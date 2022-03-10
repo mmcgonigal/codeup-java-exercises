@@ -39,6 +39,7 @@ public class Person {
 
 
         Person person1 = new Person("John");
+        System.out.println("person1 = " + person1);
         Person person2 = person1;
         System.out.println(person1.getName());  //john
         System.out.println(person2.getName()); // john but person 1 john

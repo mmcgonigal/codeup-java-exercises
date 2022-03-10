@@ -1,7 +1,7 @@
 package Exception_lecture;
 
 public class ExceptionTest {
-    public static void main(String[] args) throws // this will find exeption
+    public static void main(String[] args) throws // this will find exception
             Exception{
         System.out.println(" I am above the exception"); // this will run because this is  before Exception right below.
       //  throw new Exception("Woops - Exception-error happened"); // this is the exception < throws  and throw difference>
