@@ -14,7 +14,7 @@ public class HelloWorld {
         //main - name of our method, main is keyword that is going to be searched as the entry point.
         //String[] args - passing in a string array named args
 
-        //print out "hello world" to the console
+        //print out "wcw.txt world" to the console
         System.out.println("cool");
 
 
@@ -81,7 +81,7 @@ public class HelloWorld {
         System.out.println(y);//6
 
         //11. try create variable name class
-//        String class = "hello";
+//        String class = "wcw.txt";
 //        System.out.println(class); // not a statement, class cant be identifier
 
         //12.

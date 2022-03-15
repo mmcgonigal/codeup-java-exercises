@@ -14,7 +14,7 @@ public class ConsoleIO {
 
 //
 //       Scanner scanner = new Scanner(System.in); //create a Scanner object ,
-//       System.out.println("hello world, My name is ");
+//       System.out.println("wcw.txt world, My name is ");
 //       String UserInput = scanner.nextLine();  //nextLine() will bring up user input( token)  with white space
 //       System.out.println ("oh Hello,"+UserInput+ ", nice to meet you");
 //
@@ -25,7 +25,7 @@ public class ConsoleIO {
 //       System.out.println ("oh Hello,"+UserName+ ", nice to meet you");
 
          Scanner superman = new Scanner(System.in);
-       System.out.println("hello!@ ");
+       System.out.println("wcw.txt!@ ");
        String reply = superman.nextLine();
        System.out.println(reply);
 

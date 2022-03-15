@@ -12,7 +12,7 @@ public class oop_recap {  //sandwich  // class is like a frame for an object. /o
 
 
     public String sayHi (){
-        return ("hello from " + firstName);
+        return ("wcw.txt from " + firstName);
     }
 
 //

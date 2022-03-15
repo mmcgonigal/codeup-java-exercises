@@ -50,7 +50,7 @@ public class Methods {
 //
 //
 //
-//    //1.wrtite a method that accepts username from input and returns "hello , userInput"
+//    //1.wrtite a method that accepts username from input and returns "wcw.txt , userInput"
 //
 //    public static String userName(){
 //        Scanner scanner = new Scanner(System.in);

@@ -177,7 +177,7 @@ public class SyntaxTypesVariables {
         System.out.println(y);//6
 
         //11. try create variable name class
-//        String class = "hello";
+//        String class = "wcw.txt";
 //        System.out.println(class); // not a statement, class cant be identifier
 
         //12.

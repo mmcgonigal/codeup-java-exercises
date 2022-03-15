@@ -11,7 +11,7 @@ public class Person {
 
     }
     public void sayHello() {
-        System.out.println("hello from " + name + "!");
+        System.out.println("wcw.txt from " + name + "!");
     }
     public void sayGoodBye(){
         System.out.println("adios " + name + "!");
